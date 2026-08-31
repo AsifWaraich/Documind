@@ -1,0 +1,43 @@
+import type { Prisma } from "@prisma/client";
+
+export const projectCategories = [
+  "General Purpose",
+  "Academic & Education",
+  "Professional & Office",
+  "Medical & Healthcare",
+] as const;
+
+export type ProjectCategoryType = (typeof projectCategories)[number];
+
+export type ProjectWithDocuments = Prisma.ProjectGetPayload<{
+  include: { documents: true; recommendationQns: true };
+}>;
+
+export type Chunk = {
+  id: string;
+  content: string;
+  summary: string;
+  isTable: boolean;
+  order: number;
+  documentId: string;
+  projectId: string;
+  rrfScore: number;
+  vectorRank: number;
+  textRank: number;
+  relevanceScore?: number;
+  fileName?: string | null;
+  pageNumber?: number | null;
+};
+
+export const TIER_LIMITS = {
+  FREE: {
+	maxTokens: 1_500_000,
+	maxProjects: 7,
+	periodDays: 30,
+  },
+  PRO: {
+	maxTokens: 5_000_000,
+	maxProjects: 20,
+	periodDays: 30,
+  },
+};
