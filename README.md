@@ -1,5 +1,7 @@
 # 🤖 DocuMind — Agentic & Corrective RAG for Document Interaction
 
+[![Watch Demo](https://img.shields.io/badge/▶️_Watch-Video_Demo-FF0000?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1U_j8w83HS0W_oq4DkAEYZ5mb7vs9PCwG/view?usp=drivesdk)
+
 **DocuMind** is an AI-powered document interaction platform that allows users to **upload PDF documents, ask questions conversationally, and receive accurate, context-grounded answers with page-level citations**.
 
 Unlike basic RAG systems, DocuMind combines **agentic reasoning, hybrid retrieval, cross-encoder reranking, and corrective grading** to improve retrieval quality and reduce AI hallucinations.
@@ -12,7 +14,7 @@ Unlike basic RAG systems, DocuMind combines **agentic reasoning, hybrid retrieva
 - 💬 **Conversational Document Q&A** — Ask natural-language questions and interact with uploaded documents.
 - 🧠 **Agentic RAG Pipeline** — Query classification, multi-query expansion, retrieval, reranking, and corrective verification.
 - 🔎 **Hybrid Search** — Combines semantic vector search with **BM25 keyword search** using Reciprocal Rank Fusion (RRF).
-- 🛡️ **Hallucination Reduction** — A Grader Agent evaluates retrieved context and filters low-confidence information.
+- 🛡️ **Hallucination Reduction** — After jina reranker model returns top four chunks a grader agent evaluates those four chunks and filters low-confidence information.
 - 🌐 **Web Search Fallback** — Uses Tavily when the uploaded documents do not contain sufficient information.
 - 📌 **Source Citations** — Answers include page-level references for verification.
 - 📝 **Interactive PDF Workspace** — Read documents, highlight text, and add annotations/comments.
