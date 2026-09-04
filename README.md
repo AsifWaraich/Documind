@@ -1,6 +1,6 @@
 # 🤖 DocuMind — Agentic & Corrective RAG for Document Interaction
 
-[![Watch Demo](https://img.shields.io/badge/▶️_Watch-Video_Demo-FF0000?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1U_j8w83HS0W_oq4DkAEYZ5mb7vs9PCwG/view?usp=drivesdk)
+[![Watch Demo](https://img.shields.io/badge/▶️_Watch-Video_Demo-FF0000?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1jj7r45c0XFANHdQk3bo7Mgmf-Trx2V09/view?usp=drivesdk)
 
 **DocuMind** is an AI-powered document interaction platform that allows users to **upload PDF documents, ask questions conversationally, and receive accurate, context-grounded answers with page-level citations**.
 
